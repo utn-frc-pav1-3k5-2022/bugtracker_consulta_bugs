@@ -13,6 +13,7 @@ namespace BugTracker
 {
     public partial class frmLogin : Form
     {
+        public static string UsuarioLogin { get; set; }
         public frmLogin()
         {
             //Se inicializan los controles del formulario, si se elimina el formulario se inicia vacio (sin controles ).
@@ -46,6 +47,7 @@ namespace BugTracker
             {
                 // Mostramos un mensaje afirmativo en caso de que el usuario sea valido.
                 MessageBox.Show("Usted a ingresado al sistema.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
                 this.Close();
             }
             else
@@ -85,6 +87,7 @@ namespace BugTracker
                     if (resultado.Rows[0]["password"].ToString() == pPassword)
                     {
                         usuarioValido = true;
+                        UsuarioLogin = pUsuario;
                     }
                 }
 

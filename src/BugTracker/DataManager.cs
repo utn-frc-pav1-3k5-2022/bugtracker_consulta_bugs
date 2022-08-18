@@ -39,8 +39,7 @@ public class DataManager
         SqlCommand cmd = new SqlCommand();
         DataTable tabla = new DataTable();
         try
-        {
-
+        { 
             dbConnection.ConnectionString = string_conexion;
             dbConnection.Open();
             cmd.Connection = dbConnection;

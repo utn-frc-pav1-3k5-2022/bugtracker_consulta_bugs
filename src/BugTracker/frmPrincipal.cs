@@ -22,6 +22,7 @@ namespace BugTracker
             this.WindowState = FormWindowState.Maximized;
             frmLogin login = new frmLogin();
             login.ShowDialog();
+            statusLabel.Text = "Usuario Logueado: " + frmLogin.UsuarioLogin;
         }
 
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -34,11 +35,13 @@ namespace BugTracker
 
         private void consultarBugsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+            frmConsultaBugs consultaBugs = new frmConsultaBugs();
+            consultaBugs.ShowDialog();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Environment.Exit(0);
         }
     }
 }
