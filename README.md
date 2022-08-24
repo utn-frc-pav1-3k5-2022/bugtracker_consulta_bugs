@@ -13,7 +13,7 @@ $ git clone https://github.com/utn-frc-pav1-3k5-2022/bugtracker_consulta_bugs
 **1.2. Ubicarse en la carpeta generada con el nombre del repositorio: 
 
 ```sh
-$ cd actividad_consulta_bugs
+$ cd bugtracker_consulta_bugs
 ```
 
 **1.3. Crear un nuevo branch (rama)**
