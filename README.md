@@ -8,7 +8,7 @@
 
 **1.1. Ejecutar comando clone para descargar repositorio:** 
 ```sh
-$ git clone https://github.com/utn-frc-pav1-3k5-2021/actividad_consulta_bugs
+$ git clone https://github.com/utn-frc-pav1-3k5-2022/actividad_consulta_bugs
 ```
 **1.2. Ubicarse en la carpeta generada con el nombre del repositorio: 
 
