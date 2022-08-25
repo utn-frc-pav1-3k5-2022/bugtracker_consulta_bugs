@@ -61,7 +61,7 @@
             // consultarBugsToolStripMenuItem
             // 
             this.consultarBugsToolStripMenuItem.Name = "consultarBugsToolStripMenuItem";
-            this.consultarBugsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.consultarBugsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarBugsToolStripMenuItem.Text = "Consultar Bugs";
             this.consultarBugsToolStripMenuItem.Click += new System.EventHandler(this.consultarBugsToolStripMenuItem_Click);
             // 
@@ -114,6 +114,5 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
-
     }
 }
