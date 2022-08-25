@@ -75,6 +75,7 @@
             this.pnl_filtros.TabIndex = 1;
             this.pnl_filtros.TabStop = false;
             this.pnl_filtros.Text = "Filtros";
+            this.pnl_filtros.Enter += new System.EventHandler(this.pnl_filtros_Enter);
             // 
             // cboProductos
             // 
@@ -143,6 +144,7 @@
             this.cboCriticidades.Name = "cboCriticidades";
             this.cboCriticidades.Size = new System.Drawing.Size(210, 23);
             this.cboCriticidades.TabIndex = 8;
+            this.cboCriticidades.SelectedIndexChanged += new System.EventHandler(this.cboCriticidades_SelectedIndexChanged);
             // 
             // Label1
             // 
@@ -229,24 +231,25 @@
             this.dgvBugs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvBugs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBugs.Location = new System.Drawing.Point(14, 184);
+            this.dgvBugs.Location = new System.Drawing.Point(14, 192);
             this.dgvBugs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvBugs.Name = "dgvBugs";
             this.dgvBugs.ReadOnly = true;
             this.dgvBugs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBugs.Size = new System.Drawing.Size(1050, 361);
+            this.dgvBugs.Size = new System.Drawing.Size(963, 361);
             this.dgvBugs.TabIndex = 6;
             // 
             // frmConsultaBugs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 556);
+            this.ClientSize = new System.Drawing.Size(993, 564);
             this.Controls.Add(this.dgvBugs);
             this.Controls.Add(this.pnl_filtros);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmConsultaBugs";
             this.Text = "Consultar Bugs";
+            this.Load += new System.EventHandler(this.frmConsultaBugs_Load);
             this.pnl_filtros.ResumeLayout(false);
             this.pnl_filtros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBugs)).EndInit();
