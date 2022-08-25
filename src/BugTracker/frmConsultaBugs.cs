@@ -36,14 +36,14 @@ namespace BugTracker
             {
                 var idEstado = cboEstados.SelectedValue.ToString();
                 strSQL += "AND (id_estado=@idEstado) ";
-                parametros.Add("isEstado", idEstado);
+                parametros.Add("idEstado", idEstado);
             }
 
             if (!string.IsNullOrEmpty(cboAsignadoA.Text))
             { 
                 var asignadoA = cboAsignadoA.SelectedValue.ToString();
                 strSQL += "AND (id_usuario_asignado=@idUsuarioAsignado) ";
-                parametros.Add("isUsuarioAsignado", asignadoA);
+                parametros.Add("idUsuarioAsignado", asignadoA);
             }
 
             strSQL += "ORDER BY fecha_alta DESC";
