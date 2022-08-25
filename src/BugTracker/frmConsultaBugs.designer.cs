@@ -75,6 +75,7 @@
             this.pnl_filtros.TabIndex = 1;
             this.pnl_filtros.TabStop = false;
             this.pnl_filtros.Text = "Filtros";
+            this.pnl_filtros.Enter += new System.EventHandler(this.pnl_filtros_Enter);
             // 
             // cboProductos
             // 
@@ -236,6 +237,7 @@
             this.dgvBugs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBugs.Size = new System.Drawing.Size(1050, 361);
             this.dgvBugs.TabIndex = 6;
+            this.dgvBugs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBugs_CellContentClick);
             // 
             // frmConsultaBugs
             // 
