@@ -71,9 +71,15 @@ namespace BugTracker
             cbo.SelectedIndex = -1;
         }
 
-           private void frmBugs_Load(object sender, EventArgs e)
+        
+
+        private void cboEstados_SelectedIndexChanged(object sender, EventArgs e)
         {
-		
+
+        }
+
+        private void frmConsultaBugs_Load(object sender, EventArgs e)
+        {
             LlenarCombo(cboEstados, DataManager.GetInstance().ConsultaSQL("Select * from Estados"), "nombre", "id_estado");
 
             LlenarCombo(cboPrioridades, DataManager.GetInstance().ConsultaSQL("Select * from Prioridades"), "nombre", "id_prioridad");
@@ -83,7 +89,6 @@ namespace BugTracker
             LlenarCombo(cboAsignadoA, DataManager.GetInstance().ConsultaSQL("Select * from Usuarios"), "usuario", "id_usuario");
 
             LlenarCombo(cboProductos, DataManager.GetInstance().ConsultaSQL("Select * from Productos"), "nombre", "id_producto");
-
         }
     }
 }
