@@ -4,10 +4,10 @@ USE [master]
 /*-------------------------------------------------------------------------------------------
 IMPORTANTE!!! REEMPLAZAR nombre de base de datos usando el legajo de cada uno: Ej. BugTracker12345 */
 	
-CREATE DATABASE [BugTracker]
+CREATE DATABASE [BugTracker86720]
 GO
 
-USE [BugTracker]
+USE [BugTracker86720]
 GO
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
