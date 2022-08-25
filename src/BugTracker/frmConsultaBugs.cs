@@ -71,7 +71,6 @@ namespace BugTracker
             cbo.SelectedIndex = -1;
         }
 
-        
 
         private void cboEstados_SelectedIndexChanged(object sender, EventArgs e)
         {
