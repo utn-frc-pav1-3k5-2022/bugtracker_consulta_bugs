@@ -10,7 +10,7 @@ public class DataManager
     private static DataManager instance;
     public DataManager()
     {
-        string_conexion = "Data Source= maquis;Initial Catalog= BugTracker81940; User id= avisuales1; Password= Pav1#2020Maquis";
+        string_conexion = "Data Source= JUAN\\SQLEXPRESS;Initial Catalog= BugTracker81940;Integrated Security=true;";
     }
 
     // Con el siguiente método aplicamos el patrón singleton
