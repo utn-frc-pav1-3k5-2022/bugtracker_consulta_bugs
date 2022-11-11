@@ -17,6 +17,7 @@ namespace BugTracker
             InitializeComponent();
         }
 
+
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
@@ -34,11 +35,13 @@ namespace BugTracker
 
         private void consultarBugsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+            frmConsultaBugs frmDetalle = new frmConsultaBugs();
+            frmDetalle.ShowDialog();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Close();
         }
     }
 }
